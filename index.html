@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task 3</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+  <style type="text/css">
+  body {
+    font-family: "Urbanist";
+    background-color: rgb(30, 129, 176);
+    padding:15px;
+  }
+
+  a:link {
+    color: yellow;
+  }
+  header#page_header{
+    width:100%;
+  }
+
+  #page_header > nav > ul, #page_footer > nav > ul{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+  }
+  #page_header > nav > ul > li, #page_footer > nav > ul > li{
+    padding:0;
+    margin: 0 20px 0 0;
+    display:inline;
+  }
+  
+  #box {
+    border-style: solid;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 10px;
+    padding: 3px;
+  }
+
+  #comment {
+    padding: 10px;
+  }
+
+  .jascoder_calculator {
+   padding:10px;
+   width: 20%;
+   background:#232323;
+   border-radius:10px;
+   box-shadow:0 0 15px black;
+ }
+ .jascoder_edit {
+   height:25px;
+   width:90%;
+   text-align:right;
+   color:white;
+   background:#343434;
+   border:2px solid white;
+   border-radius:5px;
+   margin-bottom:5px;
+   padding:10px;
+   font-size:20px;
+   font-family:fantasy;
+ }
+ .jascoder_td {
+   width:65px;
+   height:50px;
+   font-size:20px;
+   color:white;
+   font-family:fantasy;
+   text-align:center;
+   background:#1530ff;
+   border: 1.5px solid white;
+   border-radius:5px;
+ }
+ td:active {
+   color:white;
+   background:#0060ff;
+ }
+ .h1 {
+   width:auto;
+   color:white;
+   text-align:center;
+ }
+
+ #qwe {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+#tebel {
+ display: flex;
+ align-items: center;
+ justify-content: center;  
+}
+</style>
+</head>
+
+<body role="document">
+  <header id="page_header" role="banner"> 
+    <h1>All About Google</h1>
+    <form role="search">
+     <input aria-label="search" type="text" name="search" spellcheck="false">
+     <input type="button" value="Search">
+   </form>
+   <nav role="navigation" aria-label="Some Google Products"> 
+    <ul>
+      <li><a href="https://drive.google.com">Drive</a></li>
+      <li><a href="https://earth.google.com">Earth</a></li>
+      <li><a href="https://news.google.com">News</a></li>
+      <li><a href="https://youtube.com">YouTube</a></li>
+    </ul> 
+  </nav>
+</header>
+
+<div role="main">
+  <h1>What is the main purpose of Google?</h1>
+  <p>
+    Google's mission is to organize the world's information and make it universally accessible and useful. That's why Search makes it easy to discover a broad range of information from a wide variety of sources. Some information is simple, like the height of the Eiffel Tower.
+  </p>
+  <h2>Google beginnings</h2>
+  <p>The domain google.com was registered on September 15, 1997, and the company incorporated on September 4, 1998. The picture below is a capture of the site from The Internet Archive of what Google looked like in 1998.</p>
+</div>
+
+<!--NOTE-->
+<div id="box">
+ <h3>NOTE</h3>
+ <p role="note">
+   As of August 10, 2015, Google is a subsidiary of the Alphabet Inc.
+ </p>
+</div>
+
+<article>
+  <h2>The Story Behind Google's Success</h2>
+  <p>By ANDREW BEATTIE | Updated May 19, 2020
+    <time datetime="2020-05-19">May 19th, 2020</time>
+  </p>
+  <p>Perhaps there is no greater testament to Google’s (GOOG) success than the fact that it has become a verb. We google for information in the same sense as we drink water. However, Google as a company has grown far beyond search. In this article, we'll review the business model and strategies that have made Google along with its parent company Alphabet; one of the most successful companies in the world.
+  </p>
+</article>
+
+<form role="application" class="jascoder_calculator" name="calculator">
+ <h1 class="h1">Calculator</h1>
+ <div id="qwe">
+   <input class="jascoder_edit" type="text" name="edit" id="edit" readonly="">
+ </div>
+ <table id="tebel">
+   <tr>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '7'">7</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '8'">8</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '9'">9</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '/'">/</td>
+   </tr>
+   <tr>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '4'">4</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '5'">5</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '6'">6</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '-'">-</td>
+   </tr>
+   <tr>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '1'">1</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '2'">2</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '3'">3</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '+'">+</td>
+   </tr>
+   <tr>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '0'">0</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value = edit.value.substring(0, edit.value.length -1)">Del</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value = eval(document.calculator.edit.value)">=</td>
+     <td class="jascoder_td" onclick="document.calculator.edit.value += '*'">*</td>
+   </tr>
+ </table>
+</div>
+</form>
+
+<div role="math" aria-label="a^{2} + b^{2} = c^{2}">
+  a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+</div>
+  
+  <div id="tree1" role="tree" tabindex="-1">
+    <div
+    id="animals"
+    class="groupHeader"
+    role="presentation"
+    aria-owns="animalGroup"
+    aria-expanded="true">
+    <img role="presentation" tabindex="-1" src="images/treeExpanded.gif" />
+    <span role="treeitem" tabindex="0">Animals</span>
+  </div>
+  <div id="animalGroup" role="group">
+    <div id="birds" role="treeitem">
+      <span tabindex="-1">Birds</span>
+    </div>
+    <div
+    id="cats"
+    class="groupHeader"
+    role="presentation"
+    aria-owns="catGroup"
+    aria-expanded="false">
+    <img role="presentation" tabindex="-1" src="images/treeContracted.gif" />
+    <span role="treeitem" tabindex="0">Cats</span>
+  </div>
+  <div id="catGroup" role="group">
+    <div id="siamese" role="treeitem">
+      <span tabindex="-1">Siamese</span>
+    </div>
+    <div id="tabby" role="treeitem">
+      <span tabindex="-1">Tabby</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <p><a href="comments"><i>25 Comments</i></a> ...</p>
+</footer>
+
+<div id="sidebar" role="complementary" role="list">
+  <nav>
+    <h2>Trending articles</h2>
+    <ul role="presentation">
+      <li><a href="#">18 tweets that will make you feel all the feels</a></li>
+      <li><a href="#">Stop searching! I've found the perfect lunch containers.</a></li>
+      <li><a href="#">The time has come to decide how to call these foods</a></li>
+      <li><a href="#">17 really good posts we saw on Tumblr this week</a></li>
+      <li><a href="#">10 parent hacks we know work because we tried them</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="comment" class="container">
+  <form class="form">
+   <input type="email" placeholder="Email:" required>
+   <input type="text" placeholder="Comment:" required>
+   <input type="submit" value="Submit Comment">
+ </form>
+</div>
+
+<footer id="page_footer" role="contentinfo">
+  <nav>
+    <ul>
+      <li><a href="#">Web Technologies</a></li>
+      <li><a href="#">Learn Web Development</a></li>
+      <li><a href="#">About MDN</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </nav>
+  <p>
+    © 2022-2023 The contents of these webpages are from Google and other sites and compiled by Ronshiel Gitalan for activity pupose only. Content is available
+    under <a href="#">these licenses</a>.
+  </p>
+</div>
+<script src="https://kit.fontawesome.com/704ff50790.js"
+crossorigin="anonymous">
+</script>
+</body>
+</html>
